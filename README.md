@@ -11,7 +11,38 @@ For reflecting static members, you can use `TypeReflectionSession`
 # Demo
 [DemoTest.java](src/test/java/online/flowerinsnow/reflectionutils/test/DemoTest.java)
 
-# Shade/Shadow
+# Include
+Repository URL of this project is [https://maven.pkg.github.com/flowerinsnowdh/ReflectionUtils](https://maven.pkg.github.com/flowerinsnowdh/ReflectionUtils)
+
+## Maven
+```xml
+<repository>
+    <id>ReflectionUtils</id>
+    <url>https://maven.pkg.github.com/flowerinsnowdh/ReflectionUtils</url>
+</repository>
+```
+
+```xml
+<dependency>
+    <groupId>online.flowerinsnow.reflectionutils</groupId>
+    <artifactId>reflectionutils</artifactId>
+    <version>1.0.0</version>
+    <scope>compile</scope>
+</dependency>
+```
+
+## Gradle
+```groovy
+maven {
+    url 'https://maven.pkg.github.com/flowerinsnowdh/ReflectionUtils'
+}
+```
+
+```groovy
+api 'online.flowerinsnow.reflectionutils:reflectionutils:1.0.0'
+```
+
+## Shade/Shadow
 If you are using this library. It is recommended that you use Relocation packages to shade/shadow into jar.
 
 E.g.
